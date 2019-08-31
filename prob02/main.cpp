@@ -1,24 +1,24 @@
-// This program calculates the user's pay.
+// The program should prompt the user to enter the number of candy bars sold and the amount the organization earns for each bar sold
 
 #include <iostream>
 
 int main()
 {
-  double hours, rate, pay;
+  double number_of_candies, price, amount;
 
-  // Get the number of hours worked.
-  std::cout << "How many hours did you work? ";
-  std::cin >> hours;
+  // Get the number of candy bars you sold.
+  std::cout << "how many candy bars did you sell ";
+  std::cin >> number_of_candies;
 
-  // Get the hourly pay rate.
-  std::cout << "How much do you get paid per hour? ";
-  std::cin >> rate;
+  // Get the price.
+  std::cout << "How much does the organization earn for each bar sold ";
+  std::cin >> price;
 
-  // Calculate the pay.
-  pay = hours * rate;
+  // Calculate the total amount earned.
+  amount = number_of_candies * price;
 
-  // Display the pay.
-  std::cout << "You have earned $" << pay << std::endl;
+  // Display the amount earned.
+  std::cout << "You have earned $" << amount << std::endl;
 
   return 0;
 }
